@@ -5,7 +5,8 @@ public class Car {
     private String series;
     private String color;
 
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String model, String series, String color) {
         this.model = model;
@@ -39,6 +40,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return model + " " + series + " " + color;        
+        return model + " " + series + " " + color;
     }
 }
