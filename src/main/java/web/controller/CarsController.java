@@ -16,10 +16,6 @@ public class CarsController {
         this.carService = carService;
     }
 
-    public String getMethodName(@RequestParam String param) {
-        return new String();
-    }
-
     @GetMapping
     public String getCars(@RequestParam(required = false, value = "count") Integer count, Model model) {
         if (count != null && (count > 0 && count < 5)) {
